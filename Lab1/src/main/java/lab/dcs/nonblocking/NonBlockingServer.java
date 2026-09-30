@@ -17,7 +17,7 @@ public class NonBlockingServer {
 //		 nonblocking I/O
 		server.configureBlocking(false);
 //		 host-port 8000
-		server.socket().bind(new java.net.InetSocketAddress("localhost",8000));
+		server.socket().bind(new java.net.InetSocketAddress("10.132.72.78",8000));
 		System.out.println("Server waiting on port 8000");
 //		 Create the selector
 		Selector selector = Selector.open();
