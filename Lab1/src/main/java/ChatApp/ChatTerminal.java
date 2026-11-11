@@ -68,14 +68,14 @@ public class ChatTerminal extends JFrame {
     public static void main(String[] args) {
         try {
             // Launch Terminal A (Listens on 1977, Sends to 1978)
-            ChatTerminal terminalA = new ChatTerminal(1977, "localhost", 1978);
+            ChatTerminal terminalA = new ChatTerminal(1977, "172.20.10.4", 9000);
             terminalA.setTitle("Terminal A (Port 1977)");
             terminalA.setLocation(100, 100);
 
             // Launch Terminal B (Listens on 1978, Sends to 1977)
-            ChatTerminal terminalB = new ChatTerminal(1978, "localhost", 1977);
-            terminalB.setTitle("Terminal B (Port 1978)");
-            terminalB.setLocation(550, 100);
+            //ChatTerminal terminalB = new ChatTerminal(1978, "localhost", 1977);
+            //terminalB.setTitle("Terminal B (Port 1978)");
+            //terminalB.setLocation(550, 100);
         } catch (Exception e) {
             e.printStackTrace();
         }
